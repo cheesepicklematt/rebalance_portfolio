@@ -1,0 +1,5 @@
+,Variable,Value,alloc_type,alloc_pct,min_btc_val,max_btc_val,trade_cutoff
+0,MEGA_CAP,2,mcap,0.63,0.002,100.0,0.05
+1,LARGE_CAP,2,eq,0.04,0.005,100.0,0.05
+2,MID_CAP,4,eq,0,0.0035,0.02,0.05
+3,SMALL_CAP,0,mcap,0,0.0035,0.03,0.05
