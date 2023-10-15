@@ -175,7 +175,7 @@ class calculateNewPortfolio:
             btcPairsInfo_r.append([t,tmpLP,tmpMP])
         self.btcPairsInfo = pd.DataFrame(btcPairsInfo_r,columns=['ticker','lastPrice','minQty'])
         self.btcPairsInfo['minQty'] = [str(decimal.Decimal(x)) for x in self.btcPairsInfo['minQty']]
-        self.btcPairsInfo['roundNum'] = 
+        self.btcPairsInfo['roundNum'] = [len(x.split('.')[1]) if x.split('.')[1]!='0' else 0 for x in self.btcPairsInfo['minQty']]
 
     def mergeWeighting(self):
         # merge to create final prepared portfolio
